@@ -1,0 +1,110 @@
+/* styles.css */
+
+/* Navbar styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  nav {
+    display: flex;
+    background-color: white; /* Set the background color of the navigation bar to white */
+    border-radius: 5px;
+  }
+  
+  nav a {
+    color: #100057; /* Set the label color to dark color */
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    opacity: 0.8;
+  }
+
+/* Container styles */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* NoteList styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+li strong {
+  display: block;
+}
+
+/* NoteDetails styles */
+div.mb-2 {
+  margin-bottom: 20px;
+}
+
+/* EditNote and NoteForm styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+    background-color: #007bff;
+  }
+
+button.btn-secondary {
+  background-color: #6c757d;
+}
+
+button.btn-danger {
+  background-color: #dc3545;
+}
+
+button.btn-primary {
+  background-color: #007bff;
+}
