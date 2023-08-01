@@ -13,6 +13,7 @@ const NoteDetails = () => {
     try {
       const response = await axios.get(`https://kzmgtzuajh.execute-api.us-east-1.amazonaws.com/prod/notes/${id}`);
       setNote(response.data);
+      console.log('Note details by Id');
     } catch (error) {
       console.error('Error fetching note:', error);
     }
@@ -26,6 +27,7 @@ const NoteDetails = () => {
     try {
 
       await axios.delete(`https://kzmgtzuajh.execute-api.us-east-1.amazonaws.com/prod/notes/${id}`);
+      console.log('Note Deleted');
       navigate('/');
     } catch (error) {
       console.error('Error deleting note:', error);
